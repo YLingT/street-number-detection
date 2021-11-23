@@ -71,13 +71,13 @@ python train.py --img 320 --batch 16 --epochs 50 --data svhn.yaml --weights yolo
 Test and generate answer.json:
 
 ### 3.  Result analysis
-| Epoch number |  Optimizer  |   Accuracy   |
-|--------------|-------------|--------------|
-|     50       |     Adam    |    0.4098    |
-|     50       |     SGD     |    0.4147    |
-|     100      |     SGD     |    0.4147    |
-|     150      |     SGD     |    0.4134    |
-|     300      |     SGD     |    0.3863    |
+|   Epoch  |  Optimizer  |   Accuracy   |
+|----------|-------------|--------------|
+|     50   |     Adam    |    0.4098    |
+|     50   |     SGD     |    0.4147    |
+|     100  |     SGD     |    0.4147    |
+|     150  |     SGD     |    0.4134    |
+|     300  |     SGD     |    0.3863    |
 
 
 
