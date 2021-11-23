@@ -72,7 +72,7 @@ Test and generate answer.json:
 ```
 python test.py --source data/svhn/test/ --weights weights/best.pt --save-txt
 ```
-Architecture in answer.json:
+Architecture in answer.json:  
 bbox = [left, top, width, height]
 ```
 [
@@ -90,15 +90,12 @@ bbox = [left, top, width, height]
 ```
 
 ### 3.  Result analysis
-|   Epoch  |  Optimizer  |   Accuracy   |
-|----------|-------------|--------------|
-|     50   |     Adam    |    0.4098    |
-|     **50**   |     **SGD**     |    **0.4147**    |
-|     100  |     SGD     |    0.4147    |
-|     150  |     SGD     |    0.4134    |
-|     300  |     SGD     |    0.3863    |
-
-
-
+|   Epoch  |  Optimizer  |  lr scheduler|   Accuracy   |
+|----------|-------------|--------------|--------------|
+|     50   |     Adam    |  ReduceLROnPlateau    |    0.4098    |
+|     **50**   |     **SGD**     |  LambdaLR    |    **0.4147**    |
+|     100  |     SGD     |  LambdaLR    |    0.4147    |
+|     150  |     SGD     |  LambdaLR    |    0.4134    |
+|     300  |     SGD     |  LambdaLR    |    0.3863    |
 
 
