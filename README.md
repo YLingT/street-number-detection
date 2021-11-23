@@ -48,12 +48,9 @@ Parameter setting:
 ```
 epoch              50
 batch size         16
-learning rate      0.0001
+learning rate      1E-2
 criterion          FocalLoss
 optimizer          SGD
 lr scheduler       LambdaLR
 ```
 Run code:
-```
-python train.py
-```
