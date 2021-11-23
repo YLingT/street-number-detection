@@ -1,6 +1,6 @@
 # street-number-detection
 
-This is the code for number detection using yolov5 on pytorch.
+This is the code for number detection using yolov5 on pytorch.  
 If you want to reproduce the project on colab, check: 
 
 ## Enviroment setting and dependencies 
