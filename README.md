@@ -34,6 +34,16 @@ cd street-number-detection
 The project structure are as follows:
 ```
 street-number-detection
+|── data
+  |── svhn
+    |── train
+      |── 1.png
+      |── 1.txt
+      |── 2.png
+      |── 2.txt...
+    |── test
+      |── 117.png
+      |── 162.png...
 |── utils
   |── dataset.py
   |── loss.py ...
@@ -50,7 +60,26 @@ epoch              50
 batch size         16
 learning rate      1E-2
 criterion          FocalLoss
-optimizer          SGD
-lr scheduler       LambdaLR
+optimizer          SGD (or Adam)
+lr scheduler       LambdaLR (or ReduceLROnPlateau)
 ```
 Run code:
+```
+python train.py --img 320 --batch 16 --epochs 50 --data svhn.yaml --weights yolov5m.pt
+```
+### 2.  Testing
+Test and generate answer.json:
+
+### 3.  Result analysis
+| Epoch number |  Optimizer  |   Accuracy   |
+|--------------|-------------|--------------|
+|     50       |     Adam    |    0.4098    |
+|     50       |     SGD     |    0.4147    |
+|     100      |     SGD     |    0.4147    |
+|     150      |     SGD     |    0.4134    |
+|     300      |     SGD     |    0.3863    |
+
+
+
+
+
