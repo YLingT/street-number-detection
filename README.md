@@ -72,6 +72,21 @@ Test and generate answer.json:
 ```
 python test.py --source data/svhn/test/ --weights weights/best.pt --save-txt
 ```
+Architecture in answer.json:
+```
+[
+    {
+        "image_id": 117,
+        "score": 0.74707,
+        "category_id": 3,
+        "bbox": [
+            41.999961,
+            8.999991999999999,
+            12.00005,
+            24.999988000000002
+        ]
+    }, ...
+```
 
 ### 3.  Result analysis
 |   Epoch  |  Optimizer  |   Accuracy   |
