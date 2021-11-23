@@ -73,6 +73,7 @@ Test and generate answer.json:
 python test.py --source data/svhn/test/ --weights weights/best.pt --save-txt
 ```
 Architecture in answer.json:
+bbox = [left, top, width, height]
 ```
 [
     {
