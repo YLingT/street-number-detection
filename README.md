@@ -92,7 +92,6 @@ bbox = [left, top, width, height]
 ### 3.  Result analysis
 |   Epoch  |  Optimizer  |  lr scheduler|   Accuracy   |
 |   :---:  |    :---:    |     :---:    |    :---:     |
-|----------|-------------|--------------|--------------|
 |     50   |     Adam    |  ReduceLROnPlateau    |    0.4098    |
 |     **50**   |     **SGD**     |  LambdaLR    |    **0.4147**    |
 |     100  |     SGD     |  LambdaLR    |    0.4147    |
