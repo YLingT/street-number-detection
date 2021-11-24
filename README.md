@@ -56,7 +56,9 @@ street-number-detection
 |── train.py
 |── test.py
 ```
-### 1.  Training
+### 1.  Data preparing
+
+### 2.  Training
 Parameter setting:
 ```
 epoch              50
@@ -70,7 +72,7 @@ Run code:
 ```
 python train.py --img 320 --batch 16 --epochs 50 --data svhn.yaml --weights yolov5m.pt
 ```
-### 2.  Testing
+### 3.  Testing
 Test and generate answer.json:
 ```
 python test.py --source data/svhn/test/ --weights weights/best.pt --save-txt
@@ -92,7 +94,7 @@ bbox = [left, top, width, height]
     }, ...
 ```
 
-### 3.  Result analysis
+### 4.  Result analysis
 |   Epoch  |  Optimizer  |  lr scheduler|   Accuracy   |
 |   :---:  |    :---:    |     :---:    |    :---:     |
 |     50   |     Adam    |  ReduceLROnPlateau    |    0.4098    |
@@ -101,4 +103,6 @@ bbox = [left, top, width, height]
 |     150  |     SGD     |  LambdaLR    |    0.4134    |
 |     300  |     SGD     |  LambdaLR    |    0.3863    |
 
+### 5. Reference
+-[yolov5] (https://github.com/ultralytics/yolov5)
 
