@@ -34,12 +34,21 @@ cd street-number-detection
 Download yolov5m pretrain weight: https://github.com/ultralytics/yolov5/releases, put it under weights folder.  
 
 ### 1.  Data preparing
-create `svhn.yaml` in `./data`,  
+create `snd.yaml` in `./data`, 
+```
+train: data/snd/train  # 33402 images
+val: data/snd/test  # no validation data
+# number of classes
+nc: 10
+# class names
+names: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+```
 The project structure are as follows:
 ```
 street-number-detection
 |── data
-  |── svhn
+  |── snd.yaml
+  |── snd
     |── train
       |── 1.png
       |── 1.txt
@@ -71,12 +80,12 @@ lr scheduler       LambdaLR (or ReduceLROnPlateau)
 ```
 Run code:
 ```
-python train.py --img 320 --batch 16 --epochs 50 --data svhn.yaml --weights yolov5m.pt
+python train.py --img 320 --batch 16 --epochs 50 --data snd.yaml --weights yolov5m.pt
 ```
 ### 3.  Testing
 Test and generate answer.json:
 ```
-python test.py --source data/svhn/test/ --weights weights/best.pt --save-txt
+python test.py --source data/snd/test/ --weights weights/best.pt --save-txt
 ```
 Architecture in answer.json:  
 bbox = [left, top, width, height]
