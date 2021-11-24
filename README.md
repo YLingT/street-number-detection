@@ -86,9 +86,9 @@ python train.py --img 320 --batch 16 --epochs 50 --data snd.yaml --weights yolov
 Download trained weight: [best.pt](), put it under weights folder.
 Test and generate answer.json:
 ```
-python test.py --source data/snd/test/ --weights weights/best.pt --save-txt
+python test.py --source data/snd/test/ --weights weights/best.pt --save-txt --save-conf
 ```
-All the results .txt will save in `./test` file, and the answer.json will be in the main file.  
+All the results .txt will save in `./detect` file, and the answer.json will be in the main file.  
 Architecture in answer.json:  
 bbox = [left, top, width, height]
 ```
