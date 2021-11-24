@@ -31,6 +31,7 @@ There are 33402 images for training and 13068 images for testing.
 git clone https://github.com/YLingT/street-number-detection
 cd street-number-detection
 ```
+Download yolov5m pretrain weight: https://github.com/ultralytics/yolov5/releases, put it under weights folder.
 The project structure are as follows:
 ```
 street-number-detection
@@ -49,6 +50,8 @@ street-number-detection
   |── loss.py ...
 |── models
   |── yolo.py ...
+|── weights
+  |── yolov5m.pt
 |── general.py
 |── train.py
 |── test.py
