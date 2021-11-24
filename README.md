@@ -11,9 +11,6 @@ Use pip install or conda install, and check the version :
 python                       3.7.11
 torch                        1.7.0
 torchvision                  0.8.1
-pandas                       1.1.3
-pillow                       8.4.0
-matplotlib                   3.4.3
 ```
 
 ## Dataset 
