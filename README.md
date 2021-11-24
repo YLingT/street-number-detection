@@ -32,6 +32,9 @@ git clone https://github.com/YLingT/street-number-detection
 cd street-number-detection
 ```
 Download yolov5m pretrain weight: https://github.com/ultralytics/yolov5/releases, put it under weights folder.  
+
+### 1.  Data preparing
+create `svhn.yaml` in `./data`,  
 The project structure are as follows:
 ```
 street-number-detection
@@ -56,8 +59,6 @@ street-number-detection
 |── train.py
 |── test.py
 ```
-### 1.  Data preparing
-
 ### 2.  Training
 Parameter setting:
 ```
