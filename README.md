@@ -88,6 +88,7 @@ Test and generate answer.json:
 ```
 python test.py --source data/snd/test/ --weights weights/best.pt --save-txt
 ```
+All the results .txt will save in `./test` file, and the answer.json will be in the main file.  
 Architecture in answer.json:  
 bbox = [left, top, width, height]
 ```
@@ -109,7 +110,7 @@ bbox = [left, top, width, height]
 |   Epoch  |  Optimizer  |  lr scheduler|   Accuracy   |
 |   :---:  |    :---:    |     :---:    |    :---:     |
 |     50   |     Adam    |  ReduceLROnPlateau    |    0.4098    |
-|     **50**   |     **SGD**     |  LambdaLR    |    **0.4147**    |
+|     **50**   |     **SGD**     |  **LambdaLR**    |    **0.4147**    |
 |     100  |     SGD     |  LambdaLR    |    0.4147    |
 |     150  |     SGD     |  LambdaLR    |    0.4134    |
 |     300  |     SGD     |  LambdaLR    |    0.3863    |
