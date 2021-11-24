@@ -88,7 +88,7 @@ class LoadImages:
 
 
 def detect(save_img=False):
-    source, weights, save_txt, imgsz = opt.source, opt.weights,
+    source, weights, save_txt, imgsz = opt.source, opt.weights,\
     opt.save_txt, opt.img_size
 
     # Directories
