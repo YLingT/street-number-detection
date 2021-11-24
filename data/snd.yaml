@@ -1,7 +1,7 @@
 
 # train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
 train: data/snd/train  # 33402 images
-val: data/snd/test  # 3000 images
+val: data/snd/test  # no validation data
 
 # number of classes
 nc: 10
