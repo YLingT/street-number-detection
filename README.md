@@ -5,14 +5,7 @@ If you want to reproduce the project on colab, check:
 https://colab.research.google.com/drive/1Bi1hi0cODIbS7U8y-M2v3tlbQjMPzfUV?usp=sharing
 
 ## Enviroment setting and dependencies 
-Use pip install or conda install :
-```
-conda create --name test python=3.7.11
-pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 torchaudio===0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
-pip install pandas==1.1.3
-pip install matplotlib==3.4.3
-```
-And check the version :
+Use pip install or conda install, and check the version :
 ```
 #Name                        Version
 python                       3.7.11
