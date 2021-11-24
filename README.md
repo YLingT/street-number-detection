@@ -83,6 +83,7 @@ Run code:
 python train.py --img 320 --batch 16 --epochs 50 --data snd.yaml --weights yolov5m.pt
 ```
 ### 3.  Testing
+Download trained weight: [best.pt](), put it under weights folder.
 Test and generate answer.json:
 ```
 python test.py --source data/snd/test/ --weights weights/best.pt --save-txt
