@@ -104,5 +104,5 @@ bbox = [left, top, width, height]
 |     300  |     SGD     |  LambdaLR    |    0.3863    |
 
 ### 5. Reference
--[yolov5] (https://github.com/ultralytics/yolov5)
+- [yolov5] (https://github.com/ultralytics/yolov5)
 
