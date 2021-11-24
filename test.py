@@ -179,7 +179,6 @@ def detect(save_img=False):
         number = int(os.path.basename(x).replace(".png", ""))
         return number
     file_name = sorted(glob.glob(filepath + "*.png"), key=key_func)
-    print(file_name)
 
     for i, file in enumerate(file_name):
         img_name = file
