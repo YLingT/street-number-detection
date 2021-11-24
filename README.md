@@ -101,7 +101,8 @@ bbox = [left, top, width, height]
 ```
 
 ### 4.  Result analysis
-Use the yolov5 with mosaic data augmentation, predict accuracy achieve 0.41470, and the mAP of first 100 images is 0.042.
+Use the yolov5 with mosaic data augmentation, predict accuracy achieve 0.41470,  
+and the mAP of first 100 images is 0.042.
 |   Epoch  |  Optimizer  |  lr scheduler|   Accuracy   |
 |   :---:  |    :---:    |     :---:    |    :---:     |
 |     50   |     Adam    |  ReduceLROnPlateau    |    0.4098    |
